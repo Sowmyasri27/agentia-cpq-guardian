@@ -1,0 +1,47 @@
+{
+  "catalog_name": "Fictional Telecom B2C Catalog",
+  "version": "sample-1.0",
+  "products": [
+    {
+      "id": "HOME_STARTER",
+      "name": "Home Starter Bundle",
+      "type": "bundle",
+      "requires": [
+        "BROADBAND_MODEM"
+      ],
+      "incompatible_with": []
+    },
+    {
+      "id": "BROADBAND_MODEM",
+      "name": "Broadband Modem",
+      "type": "component",
+      "requires": [],
+      "incompatible_with": []
+    },
+    {
+      "id": "BASIC_VIDEO",
+      "name": "Basic Video",
+      "type": "service",
+      "requires": [],
+      "incompatible_with": [
+        "PREMIUM_VIDEO"
+      ]
+    },
+    {
+      "id": "PREMIUM_VIDEO",
+      "name": "Premium Video",
+      "type": "service",
+      "requires": [],
+      "incompatible_with": [
+        "BASIC_VIDEO"
+      ]
+    },
+    {
+      "id": "VOICE_ADDON",
+      "name": "Home Voice Add-on",
+      "type": "service",
+      "requires": [],
+      "incompatible_with": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "change_id": "CHG-DEMO-001",
+  "description": "Add premium video to Home Starter bundle; sample intentionally contains defects.",
+  "target_bundle_id": "HOME_STARTER",
+  "proposed_product_ids": [
+    "HOME_STARTER",
+    "BASIC_VIDEO",
+    "PREMIUM_VIDEO"
+  ]
+}

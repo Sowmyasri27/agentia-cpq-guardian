@@ -1,0 +1,49 @@
+{
+  "tool": "Agentia CPQ Guardian",
+  "report_version": "0.1",
+  "mode": "offline_reference_prototype",
+  "target_bundle_id": "HOME_STARTER",
+  "proposed_product_ids": [
+    "HOME_STARTER",
+    "BASIC_VIDEO",
+    "PREMIUM_VIDEO"
+  ],
+  "finding_count": 2,
+  "status": "FAIL",
+  "findings": [
+    {
+      "rule_id": "INCOMPATIBLE_PRODUCTS",
+      "severity": "high",
+      "message": "Products 'BASIC_VIDEO' and 'PREMIUM_VIDEO' cannot be selected together.",
+      "product_ids": [
+        "BASIC_VIDEO",
+        "PREMIUM_VIDEO"
+      ],
+      "evidence": {
+        "product_a": "BASIC_VIDEO",
+        "product_b": "PREMIUM_VIDEO"
+      },
+      "suggested_next_step": "Remove one product or review the incompatibility rule with the product owner."
+    },
+    {
+      "rule_id": "MISSING_REQUIRED_PRODUCT",
+      "severity": "high",
+      "message": "Bundle 'HOME_STARTER' requires 'BROADBAND_MODEM', but it is absent from the proposed configuration.",
+      "product_ids": [
+        "HOME_STARTER",
+        "BROADBAND_MODEM"
+      ],
+      "evidence": {
+        "bundle_id": "HOME_STARTER",
+        "required_product_id": "BROADBAND_MODEM",
+        "proposed_product_ids": [
+          "HOME_STARTER",
+          "BASIC_VIDEO",
+          "PREMIUM_VIDEO"
+        ]
+      },
+      "suggested_next_step": "Add 'BROADBAND_MODEM' if the bundle is intended to be valid, or review the requirement with the catalog owner."
+    }
+  ],
+  "disclaimer": "Advisory prototype report. Validate findings and recommendations with a qualified catalog owner before release."
+}

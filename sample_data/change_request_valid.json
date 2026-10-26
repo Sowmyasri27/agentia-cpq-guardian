@@ -1,0 +1,10 @@
+{
+  "change_id": "CHG-DEMO-002",
+  "description": "Valid starter bundle with modem and voice add-on",
+  "target_bundle_id": "HOME_STARTER",
+  "proposed_product_ids": [
+    "HOME_STARTER",
+    "BROADBAND_MODEM",
+    "VOICE_ADDON"
+  ]
+}
